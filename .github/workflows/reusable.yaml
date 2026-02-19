@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Print environment
         run: echo "Deploying to ${{ inputs.env}}"
+# This is reusable workflow it is a workflow file that is designed to be called by other workflow instead of copying the same CI/CD 
+# we define it once and reuse it anywhere
+
+# this workflow does nothing by itself - it waits to be called
